@@ -1,0 +1,51 @@
+# Composer dependencies
+/vendor/
+
+# Composer lock file (optional - uncomment if you want to ignore it)
+# composer.lock
+
+# IDE and Editor files
+/.idea/
+/.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# PHP files
+*.log
+*.cache
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# PHPUnit
+.phpunit.result.cache
+.phpunit.cache/
+
+# PHP CS Fixer
+.php-cs-fixer.cache
+
+# Coverage reports
+/coverage/
+.coverage
+*.lcov
+
+# Build artifacts
+/build/
+/dist/
+
+# Temporary files
+/tmp/
+/temp/
+*.tmp
+*.temp

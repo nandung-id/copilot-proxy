@@ -1,0 +1,28 @@
+{
+    "name": "nandung/copilot-proxy",
+    "description": "PHP library for GitHub Copilot API proxy - OpenAI and Anthropic compatible",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "nandunkz",
+            "email": "nandunkz07@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nandung\\CopilotProxy\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Nandung\\CopilotProxy\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
