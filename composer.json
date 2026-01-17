@@ -1,5 +1,5 @@
 {
-    "name": "nandung/copilot-proxy",
+    "name": "nandunkz/copilot-proxy",
     "description": "PHP library for GitHub Copilot API proxy - OpenAI and Anthropic compatible",
     "type": "library",
     "license": "MIT",
