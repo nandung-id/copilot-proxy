@@ -7,17 +7,18 @@ namespace Nandung\CopilotProxy\Config;
  */
 class ApiConfig
 {
-    public const COPILOT_VERSION = '0.26.7';
-    public const EDITOR_PLUGIN_VERSION = 'copilot-chat/0.26.7';
-    public const USER_AGENT = 'GitHubCopilotChat/0.26.7';
-    public const API_VERSION = '2025-04-01';
+    public const COPILOT_VERSION = '0.36.1';
+    public const EDITOR_PLUGIN_VERSION = 'copilot-chat/0.36.1';
+    public const USER_AGENT = 'GitHubCopilotChat/0.36.1';
+    public const GITHUB_API_VERSION = '2022-11-28';
+    public const COPILOT_API_VERSION = '2023-07-07';
     
     public const GITHUB_API_BASE_URL = 'https://api.github.com';
     public const GITHUB_BASE_URL = 'https://github.com';
     public const GITHUB_CLIENT_ID = 'Iv1.b507a08c87ecfe98';
     public const GITHUB_APP_SCOPES = 'read:user';
     
-    public const VSCODE_VERSION = '1.96.0';
+    public const VSCODE_VERSION = '1.108.1';
 
     /**
      * Get base URL for Copilot API based on account type
@@ -53,7 +54,7 @@ class ApiConfig
             'editor-version' => "vscode/{$version}",
             'editor-plugin-version' => self::EDITOR_PLUGIN_VERSION,
             'User-Agent' => self::USER_AGENT,
-            'x-github-api-version' => self::API_VERSION,
+            'x-github-api-version' => self::GITHUB_API_VERSION,
             'x-vscode-user-agent-library-version' => 'electron-fetch',
         ]);
     }
@@ -76,7 +77,7 @@ class ApiConfig
             'editor-plugin-version' => self::EDITOR_PLUGIN_VERSION,
             'User-Agent' => self::USER_AGENT,
             'openai-intent' => 'conversation-panel',
-            'x-github-api-version' => self::API_VERSION,
+            'x-github-api-version' => self::COPILOT_API_VERSION,
             'x-request-id' => self::generateUuid(),
             'x-vscode-user-agent-library-version' => 'electron-fetch',
         ];

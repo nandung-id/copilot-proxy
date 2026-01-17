@@ -29,9 +29,9 @@ class ChatCompletionResponse
 
         return new self(
             id: $data['id'],
-            object: $data['object'],
-            created: $data['created'],
-            model: $data['model'],
+            object: $data['object'] ?? 'chat.completion',
+            created: $data['created'] ?? time(),
+            model: $data['model'] ?? 'unknown',
             choices: $choices,
             usage: $data['usage'] ?? null,
             systemFingerprint: $data['system_fingerprint'] ?? null,
