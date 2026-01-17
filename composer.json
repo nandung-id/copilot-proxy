@@ -1,11 +1,11 @@
 {
-    "name": "nandunkz/copilot-proxy",
+    "name": "nandung/copilot-proxy",
     "description": "PHP library for GitHub Copilot API proxy - OpenAI and Anthropic compatible",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "nandunkz",
+            "name": "nandung",
             "email": "nandunkz07@gmail.com"
         }
     ],
